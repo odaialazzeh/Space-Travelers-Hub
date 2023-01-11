@@ -45,7 +45,7 @@ Dragon.propTypes = {
   description: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   reserved: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Dragon;
