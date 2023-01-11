@@ -44,3 +44,46 @@ export function getRockets() {
       });
   };
 }
+
+const reserveRocket = (id) => ({
+  type: RESERVE_ROCKET,
+  payload: id,
+});
+
+export default function rocketReducer(state = initialState, action) {
+  switch (action.type) {
+    case GET_ROCKETS_REQUEST:
+      return { ...state, load: true };
+    case GET_ROCKETS_SUCCESS:
+      return {
+        ...state,
+        rocketsData: action.payload,
+        error: '',
+      };
+    case GET_ROCKETS_FAIL:
+      return {
+        ...state,
+        load: false,
+        error: action.payload,
+      };
+    case RESERVE_ROCKET:
+      return {
+        ...state,
+        rocketsData: state.rocketsData.map((rocket) => {
+          if (rocket.id === action.payload) {
+            return { ...rocket, reserved: !rocket.reserved };
+          }
+          return rocket;
+        }),
+      };
+    default:
+      return state;
+  }
+}
+
+export {
+  getRocketFail,
+  getRocketSuccess,
+  getRocketRequest,
+  reserveRocket,
+};
