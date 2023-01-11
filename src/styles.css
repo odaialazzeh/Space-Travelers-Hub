@@ -52,3 +52,27 @@ body {
   border: 1px solid gainsboro;
   margin: 1em 1.5em;
 }
+
+.dragon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
+
+.dragon-container img{
+  width: 20em;
+  height: 20em;
+  border-radius: 0.5em;
+}
+
+.dragon {
+  margin-top: -1em;
+  margin-left: 1em;
+  width: 70%;
+}
+
+.dragon span {
+  margin-left: 0.5em;
+  font-weight: normal;
+}
