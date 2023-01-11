@@ -19,6 +19,8 @@ const Dragons = () => {
           imgURL={dragon.flickr_images}
           description={dragon.description}
           type={dragon.type}
+          reserved={!!dragon.reserved}
+          id={dragon.id}
         />
       ))}
     </ul>
