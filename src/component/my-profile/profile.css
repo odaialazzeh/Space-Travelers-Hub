@@ -1,0 +1,26 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .my-rockets-sec
+   {
+    width: 100%;
+    margin: 60px;
+  }
+  
+  .my-heading {
+    margin-bottom: 20px;
+  }
+  
+  .my-rockets {
+    border: 1px solid rgba(62, 62, 62, 0.1);
+    border-radius: 5px;
+  }
+  
+  .my-rocket {
+    border: 1px solid rgba(62, 62, 62, 0.1);
+    padding: 20px;
+  }
+  
