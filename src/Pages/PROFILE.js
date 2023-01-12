@@ -7,7 +7,8 @@ import '../component/my-profile/profile.css';
 const Profile = () => {
   const myRockets = useSelector((state) => state.rockets);
   const myReserveRockets = myRockets.rocketsData.filter((rocket) => rocket.reserved);
-
+  const dragons = useSelector((state) => state.dragons);
+  const dragonsReserved = dragons.filter((dragon) => dragon.reserved);
   const handleReservations = () => {
     if (myReserveRockets.length) {
       return myReserveRockets.map((rocket) => (
@@ -19,17 +20,13 @@ const Profile = () => {
     return <h2>No Reserved Rockets</h2>;
   };
   return (
-    <div className="profile">
-      <section className="my-rockets-sec">
-        <h3 className="my-heading"> My Rockets </h3>
-        <div className="my-rockets">{handleReservations()}</div>
-      </section>
-    </div>
-  );
-  const dragons = useSelector((state) => state.dragons);
-  const dragonsReserved = dragons.filter((dragon) => dragon.reserved);
-  return (
     <>
+      <div className="profile">
+        <section className="my-rockets-sec">
+          <h3 className="my-heading"> My Rockets </h3>
+          <div className="my-rockets">{handleReservations()}</div>
+        </section>
+      </div>
       <div className="Profile-container">
         <div className="dragons-profile">
           <h2>My Dragons</h2>
