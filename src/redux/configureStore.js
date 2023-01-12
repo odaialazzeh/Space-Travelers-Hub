@@ -11,6 +11,7 @@ const store = configureStore({
     missions,
   },
 
+  },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 

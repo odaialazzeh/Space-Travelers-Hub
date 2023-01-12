@@ -109,3 +109,93 @@ td {
 .status-btn-cell button.danger-btn {
   color: #f00;
 }
+
+.dragon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
+
+.dragon-container img {
+  width: 20em;
+  height: 20em;
+  border-radius: 0.5em;
+}
+
+.dragon {
+  margin-top: -1em;
+  margin-left: 1em;
+  width: 70%;
+}
+
+.dragon h4 span {
+  margin-left: 0.5em;
+  font-weight: normal;
+}
+
+.dragon p span {
+  margin-right: 0.5em;
+  color: white;
+  background-color: rgb(72, 196, 196);
+  border: none;
+  border-radius: 0.3em;
+  padding: 0 0.3em;
+}
+
+.reserve {
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  background-color: #3193ee;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.cancel {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  background-color: white;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.Profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 5em;
+}
+
+.dragons-profile h2 {
+  margin: 1em 0 0 1.2em;
+  font-weight: 500;
+}
+
+.dragons-profile ul {
+  list-style: none;
+  margin: 0;
+}
+
+.dragons-profile li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  width: 25em;
+  padding: 0.7em;
+}
+
+.dragons-profile a {
+  text-decoration: none;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  background-color: #3193ee;
+  color: white;
+}
