@@ -8,6 +8,7 @@ const MyProfile = ({
 }) => {
   const dispatch = useDispatch();
   return (
+
     <ul>
       <li>
         {dragonsName}
@@ -22,6 +23,7 @@ const MyProfile = ({
         <a href={infoURL}>Read more</a>
       </li>
     </ul>
+
   );
 };
 

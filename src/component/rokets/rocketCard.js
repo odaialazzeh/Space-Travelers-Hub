@@ -14,25 +14,33 @@ const RocketCard = ({
 
   return (
     <div className="rocket">
-      <img className="rocket--image" src={image} alt={name} />
-      <div className="rocket--desc">
-        <h2 className="rocket--desc__title">{name}</h2>
-        <p className="rocket--desc__info">
-          {reserved && <small className="reserved-badge">reserved</small>}
+      <img className="rocket-image" src={image} alt={name} />
+      <div className="rocket-desc">
+        <h2 className="rocket-title">{name}</h2>
+        <p className="rocket-info">
+          {reserved && <small className="reserved-badge">Reserved</small>}
           {desc}
         </p>
-        <button type="button" className="rocket--desc__btn" onClick={() => handleReservation(id)}>{reserved ? 'Cancel Reservation' : 'reserved Rocket' }</button>
+        <button type="button" className={`${reserved ? 'cancel' : 'reserve'}`} onClick={() => handleReservation(id)}>{reserved ? 'Cancel Reservation' : 'Reserve Rocket' }</button>
       </div>
     </div>
   );
 };
 
 RocketCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  id: PropTypes.number,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  desc: PropTypes.string,
+  reserved: PropTypes.bool,
+};
+
+RocketCard.defaultProps = {
+  reserved: false,
+  id: null,
+  name: null,
+  image: null,
+  desc: null,
 };
 
 export default RocketCard;

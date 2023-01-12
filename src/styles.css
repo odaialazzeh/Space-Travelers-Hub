@@ -110,20 +110,23 @@ td {
   color: #f00;
 }
 
-.dragon-container {
+.dragon-container,
+.rocket {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 2em;
+  margin: 2em 0 1em 2em;
 }
 
-.dragon-container img {
+.dragon-container img,
+.rocket img {
   width: 20em;
   height: 20em;
   border-radius: 0.5em;
 }
 
-.dragon {
+.dragon,
+.rocket-desc {
   margin-top: -1em;
   margin-left: 1em;
   width: 70%;
@@ -134,7 +137,8 @@ td {
   font-weight: normal;
 }
 
-.dragon p span {
+.dragon p span,
+.reserved-badge {
   margin-right: 0.5em;
   color: white;
   background-color: rgb(72, 196, 196);
@@ -172,24 +176,36 @@ td {
   margin: 0 5em;
 }
 
-.dragons-profile h2 {
+.my-missions,
+.my-dragons,
+.my-rockets {
+  border: 1px solid gainsboro;
+  margin-left: 2.5em;
+}
+
+.missions-profile h2,
+.dragons-profile h2,
+.rockets-profile h2 {
   margin: 1em 0 0 1.2em;
   font-weight: 500;
 }
 
-.dragons-profile ul {
+.dragons-profile ul,
+.my-rockets ul {
   list-style: none;
   margin: 0;
 }
 
-.dragons-profile li {
+.dragons-profile li,
+.my-rockets li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid grey;
+  border: 1px solid gainsboro;
   width: 25em;
   padding: 0.7em;
+  margin-left: -2.5em;
 }
 
 .dragons-profile a {
@@ -198,13 +214,4 @@ td {
   padding: 0.2em;
   background-color: #3193ee;
   color: white;
-}
-
-.reserve-wrapper {
-  margin: 3rem;
-}
-
-.reserve-wrapper h2 {
-  margin: 1em 0 0 1.2em;
-  font-weight: 500;
 }
