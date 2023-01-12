@@ -52,3 +52,56 @@ body {
   border: 1px solid gainsboro;
   margin: 1em 1.5em;
 }
+
+.dragon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
+
+.dragon-container img {
+  width: 20em;
+  height: 20em;
+  border-radius: 0.5em;
+}
+
+.dragon {
+  margin-top: -1em;
+  margin-left: 1em;
+  width: 70%;
+}
+
+.dragon h4 span {
+  margin-left: 0.5em;
+  font-weight: normal;
+}
+
+.dragon p span {
+  margin-right: 0.5em;
+  color: white;
+  background-color: rgb(72, 196, 196);
+  border: none;
+  border-radius: 0.3em;
+  padding: 0 0.3em;
+}
+
+.reserve {
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  background-color: #3193ee;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.cancel {
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  background-color: white;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
