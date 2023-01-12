@@ -11,7 +11,7 @@ const Dragons = () => {
   }, [dispatch, dragonDetails]);
 
   return (
-    <ul>
+    <>
       {dragonDetails.map((dragon) => (
         <Dragon
           key={dragon.id}
@@ -23,7 +23,7 @@ const Dragons = () => {
           id={dragon.id}
         />
       ))}
-    </ul>
+    </>
   );
 };
 

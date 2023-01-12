@@ -40,12 +40,21 @@ const Dragon = ({
   );
 };
 Dragon.propTypes = {
-  dragonsName: PropTypes.string.isRequired,
-  imgURL: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
-  id: PropTypes.string.isRequired,
+  dragonsName: PropTypes.string,
+  imgURL: PropTypes.string,
+  description: PropTypes.string,
+  type: PropTypes.string,
+  reserved: PropTypes.bool,
+  id: PropTypes.string,
+};
+
+Dragon.defaultProps = {
+  reserved: false,
+  id: null,
+  dragonsName: null,
+  imgURL: null,
+  type: null,
+  description: null,
 };
 
 export default Dragon;
