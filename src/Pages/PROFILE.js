@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MyProfile from '../component/profile';
+import MissionProfile from './missionProfile';
 
 const Profile = () => {
   const dragons = useSelector((state) => state.dragons);
@@ -20,6 +21,7 @@ const Profile = () => {
             />
           )) : <p>You have no reserved dragons</p>}
         </div>
+        <MissionProfile />
       </div>
     </>
   );
