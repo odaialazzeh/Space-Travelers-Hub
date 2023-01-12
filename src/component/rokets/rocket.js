@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import RocketCard from './rocketCard';
 import { getRockets } from '../../redux/rockets/rockets';
+import './rocket.css';
 
 const Rocket = () => {
   const rockets = useSelector((state) => state.rockets);
