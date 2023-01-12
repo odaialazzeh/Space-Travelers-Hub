@@ -105,3 +105,40 @@ body {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
+
+.Profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 5em;
+}
+
+.dragons-profile h2 {
+  margin: 1em 0 0 1.2em;
+  font-weight: 500;
+}
+
+.dragons-profile ul {
+  list-style: none;
+  margin: 0;
+}
+
+.dragons-profile li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  width: 25em;
+  padding: 0.7em;
+}
+
+.dragons-profile a {
+  text-decoration: none;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  background-color: #3193ee;
+  color: white;
+}
