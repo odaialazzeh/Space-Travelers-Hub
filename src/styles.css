@@ -208,7 +208,7 @@ td {
   margin-left: -2.5em;
 }
 
-.dragons-profile a {
+.dragons-profile a , .my-rockets a{
   text-decoration: none;
   border-radius: 0.3em;
   padding: 0.2em;
