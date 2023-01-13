@@ -176,12 +176,14 @@ td {
   margin: 0 5em;
 }
 
+.my-missions,
 .my-dragons,
 .my-rockets {
   border: 1px solid gainsboro;
   margin-left: 2.5em;
 }
 
+.missions-profile h2,
 .dragons-profile h2,
 .rockets-profile h2 {
   margin: 1em 0 0 1.2em;

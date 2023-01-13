@@ -3,6 +3,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import MyProfile from '../component/profile';
 import MyRocketsProfile from '../component/rockets-profile';
+import MissionProfile from './missionProfile';
+
 
 const Profile = () => {
   const myRockets = useSelector((state) => state.rockets);
@@ -45,6 +47,7 @@ const Profile = () => {
             )) : <p>You have no reserved dragons</p>}
           </div>
         </div>
+        <MissionProfile />
       </div>
     </>
   );
