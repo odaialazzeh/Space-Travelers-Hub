@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
          My Rockets 
       </h2>
       <div
-        className="my-rockets"
+        className="box-border"
       >
         <p>
           You have no reserved rockets
@@ -29,10 +29,24 @@ exports[`renders correctly 1`] = `
       My Dragons
     </h2>
     <div
-      className="my-dragons"
+      className="box-border"
     >
       <p>
         You have no reserved dragons
+      </p>
+    </div>
+  </div>
+  <div
+    className="missions-profile"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <div
+      className="box-border"
+    >
+      <p>
+        You have no reserved missions
       </p>
     </div>
   </div>

@@ -3,8 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import MyProfile from '../component/profile';
 import MyRocketsProfile from '../component/rockets-profile';
-import MissionProfile from './missionProfile';
-
+import MissionProfile from '../component/missionProfile';
 
 const Profile = () => {
   const myRockets = useSelector((state) => state.rockets);
@@ -19,7 +18,7 @@ const Profile = () => {
         <div className="rockets-profile">
           <section className="my-rockets-sec">
             <h2> My Rockets </h2>
-            <div className="my-rockets">
+            <div className="box-border">
               {myReserveRockets.length > 0 ? myReserveRockets.map((rocket) => (
                 <MyRocketsProfile
                   key={rocket.id}
@@ -35,7 +34,7 @@ const Profile = () => {
 
         <div className="dragons-profile">
           <h2>My Dragons</h2>
-          <div className="my-dragons">
+          <div className="box-border">
             {dragonsReserved.length > 0 ? dragonsReserved.map((dragon) => (
               <MyProfile
                 key={dragon.id}

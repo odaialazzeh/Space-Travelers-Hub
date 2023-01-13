@@ -104,6 +104,7 @@ td {
   padding: 10px;
   border: solid 2px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .status-btn-cell button.danger-btn {
@@ -191,24 +192,26 @@ td {
 }
 
 .dragons-profile ul,
+.missions-profile ul,
 .my-rockets ul {
   list-style: none;
   margin: 0;
 }
 
 .dragons-profile li,
+.missions-profile li,
 .my-rockets li {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  border: 1px solid gainsboro;
+  justify-content: space-between;
   width: 25em;
   padding: 0.7em;
   margin-left: -2.5em;
 }
 
-.dragons-profile a , .my-rockets a{
+.dragons-profile a,
+.my-rockets a,
+.my-missions a {
   text-decoration: none;
   border-radius: 0.3em;
   padding: 0.2em;

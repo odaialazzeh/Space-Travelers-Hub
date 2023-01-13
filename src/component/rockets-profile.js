@@ -8,20 +8,21 @@ const MyRocketsProfile = ({
 }) => {
   const dispatch = useDispatch();
   return (
-
-    <ul>
-      <li>
-        {rocketName}
-        <button
-          type="button"
-          className={`${reserved ? 'cancel' : 'reserve'}`}
-          onClick={() => dispatch(reserveRocket(id))}
-        >
-          {reserved ? 'Cancel Reservation' : 'Reserve Dragon'}
-        </button>
-        <a href={URL}>Read more</a>
-      </li>
-    </ul>
+    <div className="my-rockets">
+      <ul>
+        <li>
+          {rocketName}
+          <button
+            type="button"
+            className={`${reserved ? 'cancel' : 'reserve'}`}
+            onClick={() => dispatch(reserveRocket(id))}
+          >
+            {reserved ? 'Cancel Reservation' : 'Reserve Dragon'}
+          </button>
+          <a href={URL}>Read more</a>
+        </li>
+      </ul>
+    </div>
 
   );
 };
