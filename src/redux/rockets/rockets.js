@@ -35,6 +35,7 @@ export function getRockets() {
           name: uniData.rocket_name,
           desc: uniData.description,
           image: uniData.flickr_images[0],
+          URL: uniData.wikipedia,
           reserved: false,
         }));
         dispatch(getRocketSuccess(rocketinfo));
