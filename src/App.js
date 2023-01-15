@@ -10,7 +10,7 @@ const App = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Navbar />}>
-        <Route index element={<Rockets />} />
+        <Route index path="/Space-Travelers-Hub" element={<Rockets />} />
         <Route path="/Missions" element={<Missions />} />
         <Route path="/Dragons" element={<Dragons />} />
         <Route path="/Profile" element={<Profile />} />

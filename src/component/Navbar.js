@@ -10,7 +10,7 @@ const Navbar = () => (
       </div>
       <ul>
         <li>
-          <Link to="/">Rockets</Link>
+          <Link to="/Space-Travelers-Hub">Rockets</Link>
         </li>
         <li>
           <Link to="/MISSIONS">Missions</Link>
