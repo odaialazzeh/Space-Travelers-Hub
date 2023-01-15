@@ -184,6 +184,13 @@ td {
   margin-left: 2.5em;
 }
 
+.missions-profile,
+.dragons-profile,
+.rockets-profile {
+  margin: 1em 0 0 1.2em;
+  font-weight: 500;
+}
+
 .missions-profile h2,
 .dragons-profile h2,
 .rockets-profile h2 {
@@ -202,9 +209,10 @@ td {
 .missions-profile li,
 .my-rockets li {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 25em;
+  width: 30em;
   padding: 0.7em;
   margin-left: -2.5em;
 }
