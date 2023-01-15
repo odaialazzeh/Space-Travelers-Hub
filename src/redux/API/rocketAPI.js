@@ -1,5 +1,5 @@
 export default async function FetchRocketsData() {
-  const rocketURL = 'https://api.spacexdata.com/v3/rockets';
+  const rocketURL = 'https://api.spacexdata.com/v4/rockets';
 
   const res = await fetch(rocketURL);
   if (res.status !== 200) {

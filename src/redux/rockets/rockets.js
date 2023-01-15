@@ -31,8 +31,8 @@ export function getRockets() {
     FetchRocketsData()
       .then((data) => {
         const rocketinfo = data.map((uniData) => ({
-          id: uniData.rocket_id,
-          name: uniData.rocket_name,
+          id: uniData.id,
+          name: uniData.name,
           desc: uniData.description,
           image: uniData.flickr_images[0],
           wikipedia: uniData.wikipedia,
@@ -46,10 +46,11 @@ export function getRockets() {
   };
 }
 
-const reserveRocket = (id) => ({
-  type: RESERVE_ROCKET,
-  payload: id,
-});
+const
+  reserveRocket = (id) => ({
+    type: RESERVE_ROCKET,
+    payload: id,
+  });
 
 export default function rocketReducer(state = initialState, action) {
   switch (action.type) {
