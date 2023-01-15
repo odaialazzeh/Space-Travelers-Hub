@@ -5,7 +5,7 @@ const Navbar = () => (
 
     <nav className="navbar">
       <div className="logo">
-        <img src="../logo.png" alt="logo" />
+        <img src="https://raw.githubusercontent.com/odaialazzeh/Space-Travelers-Hub/dev/public/logo.png" alt="logo" />
         <h1>Space Travelers Hub</h1>
       </div>
       <ul>
